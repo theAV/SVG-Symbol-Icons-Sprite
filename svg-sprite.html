@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #333;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            margin: 0 10px;
+            vertical-align: middle;
+            fill: currentColor;
+        }
+
+        .icon-md {
+            width: 55px;
+            height: 55px;
+        }
+
+        .icon-lg {
+            width: 75px;
+            height: 75px;
+        }
+        .icon-pink{
+            color:  #ff38b0;
+        }
+        .icon-blue{
+            color:  #49cdff;
+        }
+        .icon-red{
+            color:  #e00f0f;
+        }
+
+        a,
+        button {
+            text-decoration: none;
+            color: #559bdd;
+            transition: color 0.2s linear;
+        }
+        a:hover,
+        button:hover {
+            color: #458bcd;
+        }
+        h3{
+            margin-bottom: 5px;
+            margin-top: 35px;
+        }
+        button{
+            background: transparent;
+            border: none;
+            color: #00efd1;
+        }
+        .multicolor-flame{
+            --color-1: #00efd1;
+            --color-2: #00acea;
+        }
+        .multicolor-flame:hover{
+            --color-1: #f3705a;
+            --color-2: #ffd15c;
+        }        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>SVG Symbol Icons</h3>
+        <svg class="icon">
+            <use xlink:href="sprite.svg#notification" />
+        </svg>
+        <svg class="icon icon-md">
+            <use xlink:href="sprite.svg#notification" />
+        </svg>
+        <svg class="icon icon-lg">
+            <use xlink:href="sprite.svg#notification" />
+        </svg>
+        <h3>SVG Symbol Icons In Link</h3>
+        <a href="javascript:void(0);">
+            <svg class="icon">
+                <use xlink:href="sprite.svg#earth" />
+            </svg>
+        </a>
+        <a href="javascript:void(0);">
+            <svg class="icon icon-md">
+                <use xlink:href="sprite.svg#earth" />
+            </svg>
+        </a>
+        <a href="javascript:void(0);">
+            <svg class="icon icon-lg">
+                <use xlink:href="sprite.svg#earth" />
+            </svg>
+        </a>
+        <h3>SVG Symbol Icons In Button</h3>
+        <button type="button">
+            <svg class="icon">
+                <use xlink:href="sprite.svg#flame" />
+            </svg>
+        </button>
+        <button type="button">
+            <svg class="icon icon-md">
+                <use xlink:href="sprite.svg#flame" />
+            </svg>
+        </button>
+        <button type="button">
+            <svg class="icon icon-lg">
+                <use xlink:href="sprite.svg#flame" />
+            </svg>
+        </button>
+        <h3>Multi Colored SVG Symbol Icons</h3>
+        <svg class="icon icon-pink">
+            <use xlink:href="sprite.svg#fish" />
+        </svg>
+        <svg class="icon icon-md icon-blue">
+            <use xlink:href="sprite.svg#fish" />
+        </svg>
+        <svg class="icon icon-lg icon-red">
+            <use xlink:href="sprite.svg#fish" />
+        </svg>
+        <br><br>
+        <svg class="icon multicolor-flame icon-lg">
+            <use xlink:href="sprite.svg#flame2" />
+        </svg>
+    </div>
+</body>
+
+</html>
