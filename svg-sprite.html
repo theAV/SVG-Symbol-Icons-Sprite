@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Index</title>
     <style>
         * {
@@ -80,81 +80,71 @@
             --color-2: #ffd15c;
         }        
     </style>
-    <!-- for ie support -->
-    <script>
-        /MSIE|Trident/.test(navigator.userAgent) && document.addEventListener('DOMContentLoaded', function () {
-            [].forEach.call(document.querySelectorAll('svg'), function (svg) {
-                var use = svg.querySelector('use');
-                if (use) {
-                var object = document.createElement('object');
-                object.data = use.getAttribute('xlink:href');
-                object.className = svg.getAttribute('class');
-                svg.parentNode.replaceChild(object, svg);
-                }
-            });
-        });
-</script>
+
 </head>
 
 <body>
     <div class="container">
         <h3>SVG Symbol Icons</h3>
-        <svg class="icon">
-            <use xlink:href="sprite.svg#notification" />
+        <svg class="icon" role="img" title="CodePen">
+            <use xlink:href="sprite.svg#notification"></use>
         </svg>
         <svg class="icon icon-md">
-            <use xlink:href="sprite.svg#notification" />
+            <use xlink:href="sprite.svg#notification"></use>
         </svg>
         <svg class="icon icon-lg">
-            <use xlink:href="sprite.svg#notification" />
+            <use xlink:href="sprite.svg#notification"></use>
         </svg>
         <h3>SVG Symbol Icons In Link</h3>
         <a href="javascript:void(0);">
             <svg class="icon">
-                <use xlink:href="sprite.svg#earth" />
+                <use xlink:href="sprite.svg#earth"></use>
             </svg>
         </a>
         <a href="javascript:void(0);">
             <svg class="icon icon-md">
-                <use xlink:href="sprite.svg#earth" />
+                <use xlink:href="sprite.svg#earth"></use>
             </svg>
         </a>
         <a href="javascript:void(0);">
             <svg class="icon icon-lg">
-                <use xlink:href="sprite.svg#earth" />
+                <use xlink:href="sprite.svg#earth"></use>
             </svg>
         </a>
         <h3>SVG Symbol Icons In Button</h3>
         <button type="button">
             <svg class="icon">
-                <use xlink:href="sprite.svg#flame" />
+                <use xlink:href="sprite.svg#flame"></use>
             </svg>
         </button>
         <button type="button">
             <svg class="icon icon-md">
-                <use xlink:href="sprite.svg#flame" />
+                <use xlink:href="sprite.svg#flame"></use>
             </svg>
         </button>
         <button type="button">
             <svg class="icon icon-lg">
-                <use xlink:href="sprite.svg#flame" />
+                <use xlink:href="sprite.svg#flame"></use>
             </svg>
         </button>
         <h3>Multi Colored SVG Symbol Icons</h3>
         <svg class="icon icon-pink">
-            <use xlink:href="sprite.svg#fish" />
+            <use xlink:href="sprite.svg#fish"></use>
         </svg>
         <svg class="icon icon-md icon-blue">
-            <use xlink:href="sprite.svg#fish" />
+            <use xlink:href="sprite.svg#fish"></use>
         </svg>
         <svg class="icon icon-lg icon-red">
-            <use xlink:href="sprite.svg#fish" />
+            <use xlink:href="sprite.svg#fish"></use>
         </svg>
         <br><br>
         <svg class="icon multicolor-flame icon-lg">
-            <use xlink:href="sprite.svg#flame2" />
+            <use xlink:href="sprite.svg#flame2" ></use>
         </svg>
     </div>
+        <!-- for ie support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.2/svg4everybody.js"></script>
+<script>svg4everybody();</script>
 </body>
 
 </html>
